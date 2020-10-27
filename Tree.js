@@ -56,7 +56,7 @@ const Tree = () => {
     let searchNode = (node, key) => {
         if (node === null) {
             return -1
-        } else if (key < node.left) {
+        } else if (key < node.key) {
             searchNode(node.left, key)
         } else if (key > node.key) {
             searchNode(node.right, key)
